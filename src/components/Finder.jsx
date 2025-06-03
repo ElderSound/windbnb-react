@@ -4,9 +4,9 @@ export default function Finder({onShowModal, city, guests}) {
   return (
      <nav onClick={() => onShowModal(true)} className="flex gap-4 h-15 items-center shadow-sm mx-5 md:mx-0 rounded-xl w-full md:max-w-[350px] m-auto"
             id="nav-modal">
-            <div className="flex  h-9 items-center flex-grow max-w-1xl rounded-md px-1 ">
+            <div className="flex  h-9 items-center flex-grow max-w-1xl rounded-md px-1 pl-2 ">
 
-                <input value={city} placeholder="Add location" type="search" className="w-full h-full text-center outline-none border-none bg-transparent " readOnly/>
+                <input value={city} placeholder="Add location" type="search" className="w-full h-full text-center outline-none border-none bg-transparent pl-4" readOnly/>
             </div>
             <div className="flex  h-15 items-center flex-grow max-w-1xl  px-1 border-r-1 border-l-1 border-gray-100   ">
 

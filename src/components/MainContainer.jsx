@@ -5,7 +5,6 @@ import Cards from './Cards'
 export default function MainContainer({stays, availableStays}) {
    
     
-    /* console.log("hola", stays.map((stay) => console.log(stay))) */
   return (
     <>
     <main className="p-4">

@@ -10,6 +10,12 @@ export default function Home() {
     const [guests, setGuests] = useState(0);
     const [filteredStays, setFilteredStays] = useState(stays)
 
+    function clearData() {
+         setCity("");
+        setGuests(0);
+        setFilteredStays(stays);
+    }
+
     function handleSearch(city, guests) {
         console.log({ city, guests })
 
@@ -27,7 +33,7 @@ export default function Home() {
     return (
 
         <>
-            <NavBar onShowModal={setShowModal} city={city} guests={guests} />
+            <NavBar onShowModal={setShowModal} city={city} guests={guests} clear={clearData} />
             <MainContainer stays={filteredStays} availableStays={filteredStays.length} />
             {showModal && <Modal onShowModal={setShowModal} onSearch={handleSearch} />}
         </>
