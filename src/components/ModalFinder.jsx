@@ -16,7 +16,7 @@ export default function ModalFinder({ onShowLocation, onShowContador, selectedLo
                     onClick={(e) => { e.stopPropagation(); onShowLocation(true); }} 
                     onChange={(e) => setselectedLocation(e.target.value)}
                     placeholder="Add location" type="search" id="modal-search-input"
-                    className="w-full h-full outline-none border-none bg-transparent appearance-none  pl-4 pb-4" />
+                    className="w-full h-full outline-none border-none bg-transparent appearance-none text-gray-600 pl-4 pb-4" />
                 </div>
                 <div
                     className="flex md:w-full md:px-auto md:mx-auto h-full w-full flex-col flex-grow md:flex-1 max-w-1xl focus-within:rounded-b-lg md:focus-within:rounded-lg md:border-t-none border-t-1 md:border-t-0 border-gray-200  focus-within:border-2 focus-within:border-gray-400">
@@ -25,7 +25,7 @@ export default function ModalFinder({ onShowLocation, onShowContador, selectedLo
                     <input onClick={(e) => { e.stopPropagation(); onShowContador(true); }} 
                     value={
                         guestCount.adults + guestCount.children > 0? `${guestCount.adults + guestCount.children} guest(s)`: ''} readOnly  placeholder="Add guests" type="search" id="modal-guest-input"
-                        className=" relative w-full h-full mt-1  outline-none border-none bg-transparent appearance-none pl-4 pb-4" />
+                        className=" relative w-full h-full mt-1  outline-none border-none bg-transparent appearance-none text-gray-600 pl-4 pb-4" />
                 </div>
             </div>
             {/* <!-- BOTON Modal--> */}

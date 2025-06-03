@@ -6,12 +6,12 @@ export default function Finder({onShowModal, city, guests}) {
             id="nav-modal">
             <div className="flex  h-9 items-center flex-grow max-w-1xl rounded-md px-1 pl-2 ">
 
-                <input value={city} placeholder="Add location" type="search" className="w-full h-full text-center outline-none border-none bg-transparent pl-4" readOnly/>
+                <input value={city} placeholder="Add location" type="search" className="w-full h-full text-center outline-none border-none bg-transparent pl-4 text-gray-600" readOnly/>
             </div>
             <div className="flex  h-15 items-center flex-grow max-w-1xl  px-1 border-r-1 border-l-1 border-gray-100   ">
 
                 <input value={guests ? `${guests} guest(s)` : ''} placeholder="Add guests" type="search"
-                    className="w-full h-full text-center  outline-none border-none bg-transparent appearance-none" readOnly/>
+                    className="w-full h-full text-center  outline-none border-none bg-transparent appearance-none text-gray-600" readOnly/>
             </div>
             <button className=" h-9 pr-4 m-auto rounded-md  cursor-pointer" id="search-button">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
